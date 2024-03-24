@@ -1,7 +1,7 @@
-# Description
+## Description
 The BlogPost app is an Android application developed in Kotlin, following the MVVM (Model-View-ViewModel) architecture. It allows users to interact with a blogging platform, and perform CRUD operations on blog posts through a RESTful API using the Retrofit library. The app provides feedback on the status of these operations, indicating success or failure.
 
-# Features
+## Features
 1. View Blog Posts:<br>
 * See a list of blog posts with titles and summaries.<br>
 * Tap on a post to view the full content.<be>
@@ -31,7 +31,7 @@ The BlogPost app is an Android application developed in Kotlin, following the MV
 * Handle network errors gracefully, displaying appropriate messages.<br>
 * Display user-friendly messages for API errors.<br>
 
-### Technologies Used:
+## Technologies Used:
 Kotlin <br>
 MVVM architecture<br>
 Retrofit for API calls<br>
