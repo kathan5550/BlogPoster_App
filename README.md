@@ -51,7 +51,7 @@ The app follows the MVVM (Model-View-ViewModel) architecture pattern:<br>
 
 ## ScreenShots
 <img width="286" alt="Screenshot 2024-03-23 at 8 53 33 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/7106db62-96a5-46c1-9c10-06d812e3ab58">
-<img width="286" alt="Screenshot 2024-03-23 at 8 54 14 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/fe4297c2-fc71-490a-b78f-6b93e9e27cf4">
+<img width="286" alt="Screenshot 2024-03-23 at 8 54 14 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/fe4297c2-fc71-490a-b78f-6b93e9e27cf4"><br>
 <img width="287" alt="Screenshot 2024-03-23 at 8 56 10 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/2c1df67b-b9f4-418c-b49f-6b944eefe145">
 <img width="287" alt="Screenshot 2024-03-23 at 8 58 11 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/7913ec34-ea49-43e2-b30a-10f8cc57f3a7">
 
@@ -94,6 +94,23 @@ object RetrofitInstance {<br>
 
 ### 3. Create ApiService Interface
 Create an interface to define the API endpoints. This file can be named BlogPost.kt<br>
+
+interface ApiService {
+    @GET("posts")
+    fun getPosts(): Call<List<Post>>
+
+    @POST("posts")
+    fun createPost(@Body post: Post): Call<Post>
+
+    @PUT("posts/{id}")
+    fun updatePost(@Path("id") id: Int, @Body post: Post): Call<Post>
+
+    @PATCH("posts/{id}")
+    fun patchPost(@Path("id") id: Int, @Body post: Post): Call<Post>
+
+    @DELETE("posts/{id}")
+    fun deletePost(@Path("id") id: Int): Call<Void>
+}
 
 ### 4. Model Class (Post)
 You will need a model class to represent the data structure of a blog post. This class can be named Post.kt.<br>
