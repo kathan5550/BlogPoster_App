@@ -4,17 +4,17 @@ The BlogPost app is an Android application developed in Kotlin, allowing users t
 # Features
 
 View Blog Posts:
-> See a list of blog posts with titles and summaries.
-> Tap on a post to view the full content.
+See a list of blog posts with titles and summaries.
+Tap on a post to view the full content.
 
 Update Post:
-> Users can update existing blog posts.
-> Implement both PUT and PATCH methods for full and partial updates.
-> See status messages indicating whether the update was successful or failed.
+Users can update existing blog posts.
+Implement both PUT and PATCH methods for full and partial updates.
+See status messages indicating whether the update was successful or failed.
 
 Delete Post:
-> Delete unwanted blog posts.
-> Confirmation dialog ensures the user intends to delete the post.
+Delete unwanted blog posts.
+Confirmation dialog ensures the user intends to delete the post.
 
 Status Messages:
 Clear status messages for each operation:
