@@ -3,7 +3,7 @@ The BlogPost app is an Android application developed in Kotlin, allowing users t
 
 # Features
 1. View Blog Posts:
-See a list of blog posts with titles and summaries.
+See a list of blog posts with titles and summaries.<br>
 Tap on a post to view the full content.
 
 2. Update Post:
