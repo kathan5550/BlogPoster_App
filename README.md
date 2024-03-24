@@ -114,6 +114,17 @@ interface ApiService {
 
 ### 4. Model Class (Post)
 You will need a model class to represent the data structure of a blog post. This class can be named Post.kt.<br>
+package com.example.retrofit_project.models
+
+import java.io.Serializable
+
+data class post(
+    val userId:Int,
+    val id:Int,
+    val title:String,
+    val body:String):Serializable
+
+
 
 ### 5.  API Endpoint URLs
 Make sure to replace https://api.blogpost.com/ with your actual base URL in RetrofitInstance.kt. Additionally, adjust the endpoint URLs in BlogPost.kt to match your API's endpoint structure.
