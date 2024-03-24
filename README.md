@@ -29,7 +29,7 @@ Handle network errors gracefully, displaying appropriate messages.
 Display user-friendly messages for API errors.
 
 # Technologies Used:
-Kotlin
+Kotlin </n>
 Retrofit for API calls
 JSON Parsing with Gson
 Dialogs for user interaction
