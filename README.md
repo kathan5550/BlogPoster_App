@@ -2,7 +2,7 @@
 The BlogPost app is an Android application developed in Kotlin, allowing users to interact with a blogging platform. Using the Retrofit library, users can read, create, update, and delete blog posts through a RESTful API. The app provides feedback on the status of these operations, indicating success or failure.
 
 # Features
-1. View Blog Posts:<br>
+# 1. View Blog Posts:<br>
 * See a list of blog posts with titles and summaries.<br>
 * Tap on a post to view the full content.<br>
 
