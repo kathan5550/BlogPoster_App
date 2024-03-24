@@ -31,8 +31,17 @@ The BlogPost app is an Android application developed in Kotlin, following the MV
 * Handle network errors gracefully, displaying appropriate messages.<br>
 * Display user-friendly messages for API errors.<br>
 
-# Technologies Used:
+## Technologies Used:
 Kotlin <br>
+MVVM architecture<br>
 Retrofit for API calls<br>
 JSON Parsing with Gson<br>
 Dialogs for user interaction<br>
+
+
+## MVVM Architecture:
+The app follows the MVVM (Model-View-ViewModel) architecture pattern:
+
+Model: Represents the data and business logic.
+View: Represents the UI elements and interacts with the ViewModel.
+ViewModel: Manages UI-related data and communicates with the repository.
