@@ -33,6 +33,13 @@ The BlogPost app is an Android application developed in Kotlin, following the MV
 * Handle network errors gracefully, displaying appropriate messages.<br>
 * Display user-friendly messages for API errors.<br>
 
+## MVVM Architecture:
+The app follows the MVVM (Model-View-ViewModel) architecture pattern:<br>
+
+* Model: Represents the data and business logic.<br>
+* View: Represents the UI elements and interacts with the ViewModel.<br>
+* ViewModel: Manages UI-related data and communicates with the repository.<br>
+
 ## Technologies Used:
 Kotlin <br>
 MVVM architecture<br>
@@ -52,13 +59,6 @@ The PUT method in HTTP is used to update or replace an entire resource with the 
 The PATCH method in HTTP is used to apply partial modifications or updates to a resource. Unlike PUT, which replaces the entire resource, PATCH only updates the fields that are provided in the request payload. It is used when you want to modify specific attributes of a resource without affecting the rest.<br>
 
 <img width="1300" alt="Screenshot 2024-03-23 at 11 21 31 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/e5e39f17-a155-4a32-a3ee-010f202ea94b">
-
-## MVVM Architecture:
-The app follows the MVVM (Model-View-ViewModel) architecture pattern:<br>
-
-* Model: Represents the data and business logic.<br>
-* View: Represents the UI elements and interacts with the ViewModel.<br>
-* ViewModel: Manages UI-related data and communicates with the repository.<br>
 
 ## ScreenShots
 <img width="200" alt="Screenshot 2024-03-23 at 8 53 33 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/7106db62-96a5-46c1-9c10-06d812e3ab58">
