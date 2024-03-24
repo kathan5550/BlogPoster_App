@@ -127,7 +127,7 @@ data class post(<br>
 
 
 ### 5.  API Endpoint URLs
-Make sure to replace https://api.blogpost.com/ with your actual base URL in RetrofitInstance.kt. Additionally, adjust the endpoint URLs in BlogPost.kt to match your API's endpoint structure.
+Make sure to replace https://jsonplaceholder.typicode.com/ with your actual base URL in RetrofitInstance.kt. Additionally, adjust the endpoint URLs in BlogPost.kt to match your API's endpoint structure.
 
 ## License
 This project is licensed under the MIT License.
