@@ -51,9 +51,9 @@ The app follows the MVVM (Model-View-ViewModel) architecture pattern:<br>
 
 ## ScreenShots
 <img width="150" alt="Screenshot 2024-03-23 at 8 53 33 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/7106db62-96a5-46c1-9c10-06d812e3ab58">
-<img width="286" alt="Screenshot 2024-03-23 at 8 54 14 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/fe4297c2-fc71-490a-b78f-6b93e9e27cf4"><br>
-<img width="287" alt="Screenshot 2024-03-23 at 8 56 10 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/2c1df67b-b9f4-418c-b49f-6b944eefe145">
-<img width="287" alt="Screenshot 2024-03-23 at 8 58 11 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/7913ec34-ea49-43e2-b30a-10f8cc57f3a7">
+<img width="150" alt="Screenshot 2024-03-23 at 8 54 14 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/fe4297c2-fc71-490a-b78f-6b93e9e27cf4"><br>
+<img width="150" alt="Screenshot 2024-03-23 at 8 56 10 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/2c1df67b-b9f4-418c-b49f-6b944eefe145">
+<img width="150" alt="Screenshot 2024-03-23 at 8 58 11 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/7913ec34-ea49-43e2-b30a-10f8cc57f3a7">
 
 ## API Setup
 The "BlogPost" app utilizes Retrofit, a powerful HTTP client for Android and Java, to interact with a RESTful API. Follow these steps to set up the API in your Android project:
