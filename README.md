@@ -1,21 +1,25 @@
 # Description
-The BlogPost app is an Android application developed in Kotlin, allowing users to interact with a blogging platform. Using the Retrofit library, users can read, create, update, and delete blog posts through a RESTful API. The app provides feedback on the status of these operations, indicating success or failure.
+The BlogPost app is an Android application developed in Kotlin, following the MVVM (Model-View-ViewModel) architecture. It allows users to interact with a blogging platform, and perform CRUD operations on blog posts through a RESTful API using the Retrofit library. The app provides feedback on the status of these operations, indicating success or failure.
 
 # Features
-# 1. View Blog Posts:<br>
+1. View Blog Posts:<br>
 * See a list of blog posts with titles and summaries.<br>
-* Tap on a post to view the full content.<br>
+* Tap on a post to view the full content.<be>
 
-2. Update Post:<br>
+2. MVVM Architecture:<br>
+* Separation of concerns: Model, View, ViewModel.<br>
+* ViewModel manages UI-related data and communicates with the repository.<br>
+
+3. Update Post:<br>
 * Users can update existing blog posts.<br>
 * Implement both PUT and PATCH methods for full and partial updates.<br>
 * See status messages indicating whether the update was successful or failed.<br>
 
-3. Delete Post:<br>
+4. Delete Post:<br>
 * Delete unwanted blog posts.<br>
 * Confirmation dialog ensures the user intends to delete the post.<br>
 
-4. Status Messages:<br>
+5. Status Messages:<br>
 * Clear status messages for each operation:<br>
 * Successful post creation.<br>
 * Successful post update.<br>
@@ -23,7 +27,7 @@ The BlogPost app is an Android application developed in Kotlin, allowing users t
 * Successful post deletion.<br>
 * Failed post deletion (with an error message).<br>
 
-5. Error Handling:<br>
+6. Error Handling:<br>
 * Handle network errors gracefully, displaying appropriate messages.<br>
 * Display user-friendly messages for API errors.<br>
 
