@@ -44,12 +44,14 @@ Dialogs for user interaction<br>
 ## PUT and PATCH Method
 ### PUT Method:
 The PUT method in HTTP is used to update or replace an entire resource with the request payload sent to the server. It is typically used when you have the complete new representation of the resource and want to replace the existing resource with this new data.<br>
-<img width="1393" alt="Screenshot 2024-03-23 at 11 21 11 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/bcd26e8e-2280-4254-8a40-6a3bfef149a3">
+
+<img width="1300" alt="Screenshot 2024-03-23 at 11 21 11 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/bcd26e8e-2280-4254-8a40-6a3bfef149a3">
 
 
 ### PATCH Method
 The PATCH method in HTTP is used to apply partial modifications or updates to a resource. Unlike PUT, which replaces the entire resource, PATCH only updates the fields that are provided in the request payload. It is used when you want to modify specific attributes of a resource without affecting the rest.<br>
-<img width="1396" alt="Screenshot 2024-03-23 at 11 21 31 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/e5e39f17-a155-4a32-a3ee-010f202ea94b">
+
+<img width="1300" alt="Screenshot 2024-03-23 at 11 21 31 PM" src="https://github.com/kathan5550/BlogPoster_App/assets/105222761/e5e39f17-a155-4a32-a3ee-010f202ea94b">
 
 ## MVVM Architecture:
 The app follows the MVVM (Model-View-ViewModel) architecture pattern:<br>
