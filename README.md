@@ -36,6 +36,7 @@ The BlogPost app is an Android application developed in Kotlin, following the MV
 ## Technologies Used:
 Kotlin <br>
 MVVM architecture<br>
+LiveData for data observation and updates<br>
 Retrofit for API calls<br>
 JSON Parsing with Gson<br>
 Dialogs for user interaction<br>
@@ -44,6 +45,71 @@ Dialogs for user interaction<br>
 ## MVVM Architecture:
 The app follows the MVVM (Model-View-ViewModel) architecture pattern:<br>
 
-Model: Represents the data and business logic.<br>
-View: Represents the UI elements and interacts with the ViewModel.<br>
-ViewModel: Manages UI-related data and communicates with the repository.<br>
+* Model: Represents the data and business logic.<br>
+* View: Represents the UI elements and interacts with the ViewModel.<br>
+* ViewModel: Manages UI-related data and communicates with the repository.<br>
+
+## ScreenShots
+
+## API Setup
+The "BlogPost" app utilizes Retrofit, a powerful HTTP client for Android and Java, to interact with a RESTful API. Follow these steps to set up the API in your Android project:
+
+### 1. Retrofit Library Dependency
+dependencies {<br>
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'<br>
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'<br>
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")<br>
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")<br>
+    implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")<br>
+    implementation("com.google.ai.client.generativeai:generativeai:0.2.2")<br>
+}<br>
+
+### 2. Create Retrofit Client
+Create a Kotlin file for your Retrofit client, such as ApiClient.kt. This file will define the Retrofit client instance, including the base URL and other configurations.
+
+import retrofit2.Retrofit<br>
+import retrofit2.converter.moshi.MoshiConverterFactory<br>
+
+### private const val BASE_URL= "https://jsonplaceholder.typicode.com/"
+object RetrofitInstance {<br>
+
+    private val retrofit by lazy {<br>
+        Retrofit.Builder()<br>
+            .baseUrl(BASE_URL)<br>
+            .addConverterFactory(MoshiConverterFactory.create())<br>
+            .build()<br>
+    }<br>
+    val api:BlogPost by lazy {<br>
+        retrofit.create(BlogPost::class.java)<br>
+    }<br>
+}<br>
+* BASE_URL is the base URL of your API.<br>
+* MoshiConverterFactory is used for JSON serialization and deserialization.<br>
+* BlogPost is the interface defining your API endpoints (explained in the next step).<br>
+* Website Link for API: https://jsonplaceholder.typicode.com<br>
+
+### 3. Create ApiService Interface
+Create an interface to define the API endpoints. This file can be named BlogPost.kt<br>
+
+### 4. Model Class (Post)
+You will need a model class to represent the data structure of a blog post. This class can be named Post.kt.<br>
+
+### 5.  API Endpoint URLs
+Make sure to replace https://api.blogpost.com/ with your actual base URL in RetrofitInstance.kt. Additionally, adjust the endpoint URLs in BlogPost.kt to match your API's endpoint structure.
+
+## License
+This project is licensed under the MIT License.
+
+## Acknowledgements
+* Retrofit<br>
+* Gson<br>
+* MVVM architecture<br>
+* LiveData<br>
+* RecyclerView<br>
+* Dialogs for user interaction<br>
+
+## Contact
+Name : Kathan Patel<br>
+Email: kathanpatel63548@gmail.com<br>
+LinkedIn Profile: https://www.linkedin.com/in/kathan-patel-b07446237/<br>
+
